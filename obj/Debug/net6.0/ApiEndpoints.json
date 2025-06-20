@@ -1,0 +1,80 @@
+[
+  {
+    "ContainingType": "ApiMails.Controllers.MailController",
+    "Method": "SendMail",
+    "RelativePath": "api/Mail/SendMail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "File",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailToId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailToName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailSubject",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "EmailBody",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "NameFile",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiMails.Controllers.MailController",
+    "Method": "SendMailV1",
+    "RelativePath": "api/Mail/SendMailV1",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mailData",
+        "Type": "ApiMails.Models.EmailModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiMails.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ApiMails.WeatherForecast, ApiMails, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]
